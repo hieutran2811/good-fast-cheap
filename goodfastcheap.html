@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="checkbox" id="1" onclick="battat1()">good
+<input type="checkbox" id="2" onclick="battat2()">fast
+<input type="checkbox" id="3" onclick="battat3()">cheap
+<script>
+    function battat1(){
+        let x= document.getElementById("1").checked;
+        let y= document.getElementById("2").checked;
+        let z= document.getElementById("3").checked;
+        if((z===true) &&(y===true)){
+            document.getElementById("3").checked=false;
+        }
+    }
+    function battat2(){
+        let x= document.getElementById("1").checked;
+        let y= document.getElementById("2").checked;
+        let z= document.getElementById("3").checked;
+        if((z===true) &&(x===true)){
+            document.getElementById("1").checked=false;
+        }
+    }
+    function battat3(){
+        let x= document.getElementById("1").checked;
+        let y= document.getElementById("2").checked;
+        let z= document.getElementById("3").checked;
+        if((x===true) &&(y===true)){
+            document.getElementById("2").checked=false;
+        }
+    }
+</script>
+</body>
+</html>
